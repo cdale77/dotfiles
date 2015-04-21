@@ -58,7 +58,7 @@ export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 source $ZSH/oh-my-zsh.sh
 
 # use mvim
-# export GIT_EDITOR='/Applications/MacVim.app/Contents/MacOS/Vim -g -f '
+export GIT_EDITOR='/Applications/MacVim.app/Contents/MacOS/Vim -g -f '
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
