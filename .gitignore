@@ -1,0 +1,9 @@
+# gitignore for dotfiles repo
+
+# ignore everything
+*
+
+# except. . . 
+!.gitignore
+!.zshrc
+!.vimrc
