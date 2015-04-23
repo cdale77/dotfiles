@@ -82,7 +82,7 @@ alias gc="git commit"
 alias wip="git commit -m 'wip'"
 alias vi="mvim"
 alias killwebrick="kill -9 $(lsof -i tcp:3000 -t)"
-alias please="sudo $(fc -ln -1)"
+alias please='sudo $(fc -ln -1)'
 alias importdb="pg_restore --verbose --clean --no-acl --no-owner -h localhost"
 
 ### Added by the Heroku Toolbelt
