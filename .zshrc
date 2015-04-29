@@ -84,6 +84,7 @@ alias vi="mvim"
 alias killwebrick="kill -9 $(lsof -i tcp:3000 -t)"
 alias please='sudo $(fc -ln -1)'
 alias importdb="pg_restore --verbose --clean --no-acl --no-owner -h localhost"
+alias gsquash="git rebase -i HEAD~2"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
@@ -111,3 +112,7 @@ zle-line-init() {
 }
 zle -N zle-keymap-select
 zle -N zle-line-init
+
+
+source ~/.xsh
+
