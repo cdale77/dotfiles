@@ -39,6 +39,10 @@ plugins=(git rails ruby bundler osx)
 
 # User configuration
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+
+#https://gist.github.com/DanHerbert/9520689
+export PATH="$HOME/.node/bin:$PATH"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 # Android
 export PATH=${PATH}:~/dev/android-sdk-macosx/tools
@@ -112,7 +116,3 @@ zle-line-init() {
 }
 zle -N zle-keymap-select
 zle -N zle-line-init
-
-
-source ~/.xsh
-
