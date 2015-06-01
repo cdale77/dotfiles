@@ -31,6 +31,7 @@ Plugin 'marijnh/tern_for_vim'
 Bundle 'heartsentwined/vim-emblem'
 Bundle 'heartsentwined/vim-ember-script'
 Plugin 'othree/javascript-libraries-syntax'
+Plugin 'elixir-lang/vim-elixir'
 
 call vundle#end()            " required
 syntax enable
