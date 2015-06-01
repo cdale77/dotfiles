@@ -48,7 +48,7 @@ export PATH="$HOME/.node/bin:$PATH"
 export PATH=${PATH}:~/dev/android-sdk-macosx/tools
 #export JAVA_HOME="/Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java"
 #export JAVA_HOME="/usr/libexec/java_home"
-export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+#export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 source $ZSH/oh-my-zsh.sh
 
 
