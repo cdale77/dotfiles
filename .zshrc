@@ -51,7 +51,8 @@ export PATH=${PATH}:~/dev/android-sdk-macosx/tools
 #export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 source $ZSH/oh-my-zsh.sh
 
-
+#cordova
+export ANDROID_HOME=/usr/local/opt/android-sdk
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
