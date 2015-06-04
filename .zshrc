@@ -45,7 +45,7 @@ export PATH="$HOME/.node/bin:$PATH"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 # Android
-export PATH=${PATH}:~/dev/android-sdk-macosx/tools
+#export PATH=${PATH}:~/dev/android-sdk-macosx/tools
 #export JAVA_HOME="/Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/bin/java"
 #export JAVA_HOME="/usr/libexec/java_home"
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
