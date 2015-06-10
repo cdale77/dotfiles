@@ -15,23 +15,23 @@ Plugin 'gmarik/Vundle.vim'
 
 " All of your Plugins must be added before the following line
 
-Plugin 'tpope/vim-rails'
-Plugin 'tpope/vim-fugitive'
+"Plugin 'tpope/vim-rails'
+"Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'fatih/vim-go'
-Plugin 'mustache/vim-mustache-handlebars'
-Plugin 'pangloss/vim-javascript'
+"Plugin 'nathanaelkane/vim-indent-guides'
+"Plugin 'mustache/vim-mustache-handlebars'
+"Plugin 'pangloss/vim-javascript'
 Plugin 'kchmck/vim-coffee-script'
-Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Valloric/YouCompleteMe'
 "Plugin 'scrooloose/syntastic'
 " Plugin 'mxw/vim-jsx' " Breaks syntax highlighting for js
-Bundle "wookiehangover/jshint.vim"
-Plugin 'marijnh/tern_for_vim'
-Bundle 'heartsentwined/vim-emblem'
-Bundle 'heartsentwined/vim-ember-script'
-Plugin 'othree/javascript-libraries-syntax'
-Plugin 'elixir-lang/vim-elixir'
+"Bundle 'wookiehangover/jshint.vim'
+"Plugin 'marijnh/tern_for_vim'
+"Bundle 'heartsentwined/vim-emblem'
+"Bundle 'heartsentwined/vim-ember-script'
+"Plugin 'othree/javascript-libraries-syntax'
+""Plugin 'elixir-lang/vim-elixir'
 
 call vundle#end()            " required
 syntax enable
