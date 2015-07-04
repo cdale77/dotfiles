@@ -95,6 +95,9 @@ alias gsquash="git rebase -i HEAD~2"
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+### AWS CLI
+source /usr/local/share/zsh/site-functions/_aws
+
 ### Golang
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export GOPATH=$HOME/dev/go
