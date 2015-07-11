@@ -23,11 +23,11 @@ Plugin 'fatih/vim-go'
 "Plugin 'mustache/vim-mustache-handlebars'
 "Plugin 'pangloss/vim-javascript'
 Plugin 'kchmck/vim-coffee-script'
-"Plugin 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
 "Plugin 'scrooloose/syntastic'
 " Plugin 'mxw/vim-jsx' " Breaks syntax highlighting for js
 "Bundle 'wookiehangover/jshint.vim'
-"Plugin 'marijnh/tern_for_vim'
+Plugin 'marijnh/tern_for_vim'
 "Bundle 'heartsentwined/vim-emblem'
 "Bundle 'heartsentwined/vim-ember-script'
 "Plugin 'othree/javascript-libraries-syntax'
@@ -42,14 +42,14 @@ set backspace=2 " Backspace deletes like most programs in insert mode
 set history=50
 set ruler " show the cursor position all the time
 
-" Softtabs, 2 spaces
+" Softtabs, 2 spaces by default
 set tabstop=2
 set shiftwidth=2
 set shiftround
 set expandtab
-" Display extra whitespace
-set list listchars=tab:»·,trail:·,nbsp:·
 
+autocmd FileType ruby set list listchars=tab:»·,trail:·,nbsp:·
+autocmd FileType go setlocal tabstop=8
 
 " Make it obvious where 80 characters is
 set textwidth=80
@@ -88,6 +88,10 @@ let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 "let g:syntastic_javascript_jsxhint_exec = 'jsx-jshint-wrapper'
 "let g:syntastic_ruby_checkers = ['rubocop', 'mri']
 "
+
+"fzf
+set rtp+=/usr/local/Cellar/fzf/HEAD
+
 if has("gui_macvim")
   " Press Ctrl-Tab to switch between open tabs (like browser tabs) to 
   " the right side. Ctrl-Shift-Tab goes the other way.

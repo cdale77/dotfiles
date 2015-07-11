@@ -121,3 +121,4 @@ zle-line-init() {
 }
 zle -N zle-keymap-select
 zle -N zle-line-init
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
