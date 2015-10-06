@@ -91,6 +91,7 @@ alias killwebrick="kill -9 $(lsof -i tcp:3000 -t)"
 alias please='sudo $(fc -ln -1)'
 alias importdb="pg_restore --verbose --clean --no-acl --no-owner -h localhost"
 alias gsquash="git rebase -i HEAD~2"
+alias resetgit="git add -A && git stash save && git stash drop"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
