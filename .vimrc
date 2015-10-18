@@ -51,6 +51,7 @@ set expandtab
 autocmd FileType ruby set list listchars=tab:»·,trail:·,nbsp:·
 autocmd FileType go setlocal tabstop=8
 autocmd FileType javascript set list listchars=tab:»·,trail:·,nbsp:·
+autocmd FileType html set list listchars=tab:»·,trail:·,nbsp:·
 
 
 " Make it obvious where 80 characters is
