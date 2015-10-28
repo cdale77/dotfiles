@@ -21,11 +21,11 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'fatih/vim-go'
 "Plugin 'nathanaelkane/vim-indent-guides'
 "Plugin 'mustache/vim-mustache-handlebars'
-"Plugin 'pangloss/vim-javascript'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'Valloric/YouCompleteMe'
 "Plugin 'scrooloose/syntastic'
-" Plugin 'mxw/vim-jsx' " Breaks syntax highlighting for js
+Plugin 'pangloss/vim-javascript'
+ Plugin 'mxw/vim-jsx' " Breaks syntax highlighting for js
 "Bundle 'wookiehangover/jshint.vim'
 Plugin 'marijnh/tern_for_vim'
 "Bundle 'heartsentwined/vim-emblem'
@@ -94,6 +94,26 @@ let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 
 "fzf
 set rtp+=/usr/local/Cellar/fzf/HEAD
+
+" Keep 5 lines of context when scrolling
+set scrolloff=5
+
+" Use bash instead of sh
+set shell=/bin/bash
+
+set tags=.git/tags
+
+" Set default encoding to UTF-8.
+set encoding=utf-8 fileencodings=
+
+" The first setting sets up 2-space tabs, the second tells vi to use 2 spaces when text is indented (auto or with the manual indent adjustmenters), and the third tells vi not to auto-replace spaces with tab characters.
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
+" Automatic indentation
+set autoindent
+set smarttab
 
 if has("gui_macvim")
   " Press Ctrl-Tab to switch between open tabs (like browser tabs) to 
