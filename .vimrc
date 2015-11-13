@@ -17,6 +17,7 @@ Plugin 'gmarik/Vundle.vim'
 
 "Plugin 'tpope/vim-rails'
 "Plugin 'tpope/vim-fugitive'
+Plugin 'jpo/vim-railscasts-theme'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'fatih/vim-go'
 "Plugin 'nathanaelkane/vim-indent-guides'
@@ -52,6 +53,11 @@ autocmd FileType ruby set list listchars=tab:»·,trail:·,nbsp:·
 autocmd FileType go setlocal tabstop=8
 autocmd FileType javascript set list listchars=tab:»·,trail:·,nbsp:·
 autocmd FileType html set list listchars=tab:»·,trail:·,nbsp:·
+autocmd FileType css set list listchars=tab:»·,trail:·,nbsp:·
+autocmd FileType scss set list listchars=tab:»·,trail:·,nbsp:·
+autocmd FileType erb set list listchars=tab:»·,trail:·,nbsp:·
+autocmd FileType haml set list listchars=tab:»·,trail:·,nbsp:·
+autocmd FileType php set list listchars=tab:»·,trail:·,nbsp:·
 
 
 " Make it obvious where 80 characters is
