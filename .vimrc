@@ -58,7 +58,7 @@ autocmd FileType scss set list listchars=tab:»·,trail:·,nbsp:·
 autocmd FileType erb set list listchars=tab:»·,trail:·,nbsp:·
 autocmd FileType haml set list listchars=tab:»·,trail:·,nbsp:·
 autocmd FileType php set list listchars=tab:»·,trail:·,nbsp:·
-
+au BufEnter,BufNew *.es6 set syntax=javascript
 
 " Make it obvious where 80 characters is
 set textwidth=80
