@@ -33,6 +33,7 @@ Plugin 'marijnh/tern_for_vim'
 "Bundle 'heartsentwined/vim-ember-script'
 "Plugin 'othree/javascript-libraries-syntax'
 ""Plugin 'elixir-lang/vim-elixir'
+Plugin 'tpope/vim-endwise'
 
 call vundle#end()            " required
 syntax enable
