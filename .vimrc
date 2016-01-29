@@ -15,25 +15,20 @@ Plugin 'gmarik/Vundle.vim'
 
 " All of your Plugins must be added before the following line
 
-"Plugin 'tpope/vim-rails'
-"Plugin 'tpope/vim-fugitive'
 Plugin 'jpo/vim-railscasts-theme'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'fatih/vim-go'
-"Plugin 'nathanaelkane/vim-indent-guides'
-"Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'Valloric/YouCompleteMe'
 "Plugin 'scrooloose/syntastic'
 Plugin 'pangloss/vim-javascript'
- Plugin 'mxw/vim-jsx' " Breaks syntax highlighting for js
-"Bundle 'wookiehangover/jshint.vim'
+Plugin 'mxw/vim-jsx' " Breaks syntax highlighting for js
 Plugin 'marijnh/tern_for_vim'
-"Bundle 'heartsentwined/vim-emblem'
-"Bundle 'heartsentwined/vim-ember-script'
-"Plugin 'othree/javascript-libraries-syntax'
-""Plugin 'elixir-lang/vim-elixir'
 Plugin 'tpope/vim-endwise'
+Plugin 'scrooloose/nerdtree'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'tpope/vim-surround'
+Plugin 'jiangmiao/auto-pairs'
 
 call vundle#end()            " required
 syntax enable
@@ -50,6 +45,7 @@ set shiftwidth=2
 set shiftround
 set expandtab
 
+set list listchars=trail:·,nbsp:·
 autocmd FileType ruby set list listchars=tab:»·,trail:·,nbsp:·
 autocmd FileType go setlocal tabstop=8
 autocmd FileType javascript set list listchars=tab:»·,trail:·,nbsp:·
