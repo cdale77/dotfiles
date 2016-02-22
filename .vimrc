@@ -29,6 +29,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'tpope/vim-surround'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'elixir-lang/vim-elixir'
 
 call vundle#end()            " required
 syntax enable
@@ -56,6 +57,7 @@ autocmd FileType erb set list listchars=tab:»·,trail:·,nbsp:·
 autocmd FileType haml set list listchars=tab:»·,trail:·,nbsp:·
 autocmd FileType php set list listchars=tab:»·,trail:·,nbsp:·
 au BufEnter,BufNew *.es6 set syntax=javascript
+au BufEnter,BufNew *.hbs set syntax=html
 
 " Make it obvious where 80 characters is
 set textwidth=80
