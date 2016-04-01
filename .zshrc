@@ -72,7 +72,7 @@ export ANDROID_HOME=/usr/local/opt/android-sdk
 eval "$(rbenv init -)"
 
 #Postgres.app
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
 ## Aliases
 alias cdl="cd ~/dev/rails/lupine"
