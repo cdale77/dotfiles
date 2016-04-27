@@ -26,7 +26,7 @@ Plugin 'mxw/vim-jsx' " Breaks syntax highlighting for js
 "Plugin 'marijnh/tern_for_vim'
 Plugin 'tpope/vim-endwise'
 Plugin 'scrooloose/nerdtree'
-Plugin 'nathanaelkane/vim-indent-guides'
+"Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'tpope/vim-surround'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'elixir-lang/vim-elixir'
