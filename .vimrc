@@ -127,5 +127,4 @@ if has("gui_macvim")
   noremap <C-Tab> :tabnext<CR>
   noremap <C-S-Tab> :tabprev<CR>
 endif
-
 "set guifont=Monaco:h12
