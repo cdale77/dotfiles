@@ -30,6 +30,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-surround'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'tpope/vim-repeat'
 "Plugin 'ternjs/tern_for_vim'
 
 call vundle#end()            " required
