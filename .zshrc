@@ -38,8 +38,6 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 alias cdl="cd ~/dev/rails/lupine"
 alias cdr="cd ~/dev/rails"
 
-alias resetdb="bundle exec rake db:drop && rake db:create && rake db:schema:load"
-
 alias gs="git status"
 alias gl="git log"
 alias gb="git branch"
