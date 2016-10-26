@@ -59,10 +59,9 @@ export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export GOPATH=$HOME/dev/go
 export PATH=$PATH:$GOPATH/bin
 
+# Vim mode indicator
 bindkey -v
 export KEYTIMEOUT=1
-
-# Vim mode indicator
 precmd() {
   RPROMPT=""
 }
@@ -78,3 +77,9 @@ zle-line-init() {
 zle -N zle-keymap-select
 zle -N zle-line-init
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Set up history
+HISTSIZE=10000
+SAVEHIST=10000
+HISTFILE=~/.zsh_history
+bindkey \C-R history-incremental-search-backward
