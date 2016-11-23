@@ -100,7 +100,7 @@ let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 "
 
 "fzf
-set rtp+=/usr/local/Cellar/fzf/HEAD
+"set rtp+=/usr/local/Cellar/fzf/HEAD
 
 " Keep 5 lines of context when scrolling
 set scrolloff=5
@@ -128,4 +128,6 @@ if has("gui_macvim")
   noremap <C-Tab> :tabnext<CR>
   noremap <C-S-Tab> :tabprev<CR>
 endif
-"set guifont=Monaco:h12
+set guioptions-=m  "menu bar
+set guioptions-=T  "toolbar
+set guifont=DejaVu\ Sans\ Mono\ 9
