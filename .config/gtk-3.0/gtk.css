@@ -13,3 +13,7 @@ headerbar {
     margin: -3px; /* same as headerbar side padding for nicer proportions */
     padding: 0px;
   }
+
+  stage {
+    font-size: 9em;
+  }
