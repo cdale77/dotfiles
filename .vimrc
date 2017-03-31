@@ -65,8 +65,6 @@ au BufEnter,BufNew *.hbs set syntax=html
 set textwidth=80
 set colorcolumn=+1
 
-
-" Color scheme
 colorscheme railscasts
 highlight NonText guibg=#060606
 highlight Folded guibg=#0A0A0A guifg=#9090D0
@@ -105,8 +103,8 @@ let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 " Keep 5 lines of context when scrolling
 set scrolloff=5
 
-" Use bash instead of sh
-set shell=/bin/bash
+" Use zsh
+set shell=/bin/zsh
 
 set tags=.git/tags
 
@@ -122,12 +120,6 @@ set expandtab
 set autoindent
 set smarttab
 
-if has("gui_macvim")
-  " Press Ctrl-Tab to switch between open tabs (like browser tabs) to 
-  " the right side. Ctrl-Shift-Tab goes the other way.
-  noremap <C-Tab> :tabnext<CR>
-  noremap <C-S-Tab> :tabprev<CR>
-endif
 set guioptions-=m  "menu bar
 set guioptions-=T  "toolbar
 set guifont=DejaVu\ Sans\ Mono\ 9
