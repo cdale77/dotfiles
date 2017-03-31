@@ -11,7 +11,7 @@ CASE_SENSITIVE="true"
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 HIST_STAMPS="mm/dd/yyyy"
 
-plugins=(git rails ruby bundler osx)
+plugins=(git rails ruby bundler)
 
 source $ZSH/oh-my-zsh.sh
 
