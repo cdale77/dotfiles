@@ -22,26 +22,17 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
 eval "$(rbenv init -)"
 
+# Java
+export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/jre"
+
 ## Aliases
 alias gs="git status"
 alias gl="git log"
 alias gb="git branch"
 alias ga="git add -A"
 alias gc="git commit"
-alias wip="git commit -m 'wip'"
-#alias vi="mvim"
 #alias vi="gnome-terminal --window-with-profile=Vim -x vim"
 alias vi="gvim"
-alias please='sudo $(fc -ln -1)'
-alias importdb="pg_restore --verbose --clean --no-acl --no-owner -h localhost"
-alias gsquash="git rebase -i HEAD~2"
-alias resetgit="git add -A && git stash save && git stash drop"
-
-
-### Golang
-#export PATH=$PATH:/usr/local/opt/go/libexec/bin
-#export GOPATH=$HOME/dev/go
-#export PATH=$PATH:$GOPATH/bin
 
 # Vim mode indicator
 bindkey -v
