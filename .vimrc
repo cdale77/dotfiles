@@ -19,7 +19,7 @@ Plugin 'jpo/vim-railscasts-theme'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'fatih/vim-go'
 Plugin 'kchmck/vim-coffee-script'
-"Plugin 'Valloric/YouCompleteMe'
+Plugin 'Valloric/YouCompleteMe'
 "Plugin 'scrooloose/syntastic'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx' " Breaks syntax highlighting for js
