@@ -4,33 +4,26 @@ filetype off                  " required
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-
-" All of your Plugins must be added before the following line
-
 Plugin 'jpo/vim-railscasts-theme'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'fatih/vim-go'
-Plugin 'kchmck/vim-coffee-script'
+"Plugin 'fatih/vim-go'
+"Plugin 'kchmck/vim-coffee-script'
 Plugin 'Valloric/YouCompleteMe'
 "Plugin 'scrooloose/syntastic'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx' " Breaks syntax highlighting for js
 "Plugin 'marijnh/tern_for_vim'
 Plugin 'tpope/vim-endwise'
-Plugin 'scrooloose/nerdtree'
+"Plugin 'scrooloose/nerdtree'
 "Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'tpope/vim-surround'
+"Plugin 'tpope/vim-surround'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'elixir-lang/vim-elixir'
-Plugin 'tpope/vim-repeat'
+"Plugin 'tpope/vim-repeat'
 "Plugin 'ternjs/tern_for_vim'
 
 call vundle#end()            " required
@@ -58,6 +51,8 @@ autocmd FileType scss set list listchars=tab:»·,trail:·,nbsp:·
 autocmd FileType erb set list listchars=tab:»·,trail:·,nbsp:·
 autocmd FileType haml set list listchars=tab:»·,trail:·,nbsp:·
 autocmd FileType php set list listchars=tab:»·,trail:·,nbsp:·
+autocmd FileType ex set list listchars=tab:»·,trail:·,nbsp:·
+autocmd FileType exs set list listchars=tab:»·,trail:·,nbsp:·
 au BufEnter,BufNew *.es6 set syntax=javascript
 au BufEnter,BufNew *.hbs set syntax=html
 
@@ -123,3 +118,7 @@ set smarttab
 set guioptions-=m  "menu bar
 set guioptions-=T  "toolbar
 set guifont=DejaVu\ Sans\ Mono\ 9
+
+" YCM
+let g:ycm_min_num_of_chars_for_completion = 2
+let g:ycm_complete_in_strings = 0
