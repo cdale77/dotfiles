@@ -10,7 +10,7 @@ headerbar {
     /*min-height: 20px;*/
     padding-left: 2px; /* same as childrens vertical margins for nicer proportions */
     padding-right: 2px;
-    margin: -3px; /* same as headerbar side padding for nicer proportions */
+    margin: -6px; /* same as headerbar side padding for nicer proportions */
     padding: 0px;
   }
 
