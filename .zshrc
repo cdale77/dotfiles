@@ -17,6 +17,9 @@ source $ZSH/oh-my-zsh.sh
 
 export EDITOR='vim'
 
+#pip
+export PATH=~/.local/bin:$PATH
+
 #rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
