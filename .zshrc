@@ -26,7 +26,10 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 # Java
-export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/jre"
+#export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/jre"
+export JAVA_HOME="/usr/lib/jvm/java-8-oracle"
+export TOMCAT_HOME="/usr/share/tomcat8"
+export MAVEN_HOME="/usr/bin/mvn"
 
 ## Aliases
 alias gs="git status"
@@ -38,24 +41,24 @@ alias gc="git commit"
 alias vi="gvim"
 
 # Vim mode indicator
-bindkey -v
-export KEYTIMEOUT=1
-precmd() {
-  RPROMPT=""
-}
-zle-keymap-select() {
-  RPROMPT=""
-  [[ $KEYMAP = vicmd ]] && RPROMPT="(CMD)"
-  () { return $__prompt_status }
-  zle reset-prompt
-}
-zle-line-init() {
-  typeset -g __prompt_status="$?"
-}
-zle -N zle-keymap-select
-zle -N zle-line-init
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
+#bindkey -v
+#export KEYTIMEOUT=1
+#precmd() {
+#  RPROMPT=""
+#}
+#zle-keymap-select() {
+#  RPROMPT=""
+#  [[ $KEYMAP = vicmd ]] && RPROMPT="(CMD)"
+#  () { return $__prompt_status }
+#  zle reset-prompt
+#}
+#zle-line-init() {
+#  typeset -g __prompt_status="$?"
+#}
+#zle -N zle-keymap-select
+#zle -N zle-line-init
+#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+#
 # Set up history
 HISTSIZE=10000
 SAVEHIST=10000

@@ -53,6 +53,7 @@ autocmd FileType haml set list listchars=tab:»·,trail:·,nbsp:·
 autocmd FileType php set list listchars=tab:»·,trail:·,nbsp:·
 autocmd FileType ex set list listchars=tab:»·,trail:·,nbsp:·
 autocmd FileType exs set list listchars=tab:»·,trail:·,nbsp:·
+autocmd FileType java set nolist tabstop=4 shiftwidth=4 listchars=trail:·,nbsp:·
 au BufEnter,BufNew *.es6 set syntax=javascript
 au BufEnter,BufNew *.hbs set syntax=html
 
