@@ -1,3 +1,11 @@
+
+# homebrew
+export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/sbin:$PATH
+
+# python
+export PATH=/usr/local/opt/python/libexec/bin:$PATH
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -16,20 +24,8 @@ plugins=(git rails ruby bundler)
 source $ZSH/oh-my-zsh.sh
 
 export EDITOR='vim'
+export TERM="screen-256color"
 
-#pip
-export PATH=~/.local/bin:$PATH
-
-#rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-#export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"
-eval "$(rbenv init -)"
-
-# Java
-#export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/jre"
-export JAVA_HOME="/usr/lib/jvm/java-8-oracle"
-export TOMCAT_HOME="/usr/share/tomcat8"
-export MAVEN_HOME="/usr/bin/mvn"
 
 ## Aliases
 alias gs="git status"
@@ -37,30 +33,41 @@ alias gl="git log"
 alias gb="git branch"
 alias ga="git add -A"
 alias gc="git commit"
-#alias vi="gnome-terminal --window-with-profile=Vim -x vim"
-alias vi="gvim"
+#alias vim="mvim"
+alias vi="nvim"
 
-# Vim mode indicator
-#bindkey -v
-#export KEYTIMEOUT=1
-#precmd() {
-#  RPROMPT=""
-#}
-#zle-keymap-select() {
-#  RPROMPT=""
-#  [[ $KEYMAP = vicmd ]] && RPROMPT="(CMD)"
-#  () { return $__prompt_status }
-#  zle reset-prompt
-#}
-#zle-line-init() {
-#  typeset -g __prompt_status="$?"
-#}
-#zle -N zle-keymap-select
-#zle -N zle-line-init
-#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-#
-# Set up history
-HISTSIZE=10000
-SAVEHIST=10000
-HISTFILE=~/.zsh_history
-bindkey \C-R history-incremental-search-backward
+fpath=(/usr/local/share/zsh-completions $fpath)
+
+# rbenv
+eval "$(rbenv init -)"
+
+# virtualenv
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+source /usr/local/bin/virtualenvwrapper.sh
+
+bindkey -v
+
+bindkey '^P' up-history
+bindkey '^N' down-history
+bindkey '^?' backward-delete-char
+bindkey '^h' backward-delete-char
+bindkey '^w' backward-kill-word
+bindkey '^r' history-incremental-search-backward
+
+precmd() { RPROMPT="" }
+function zle-line-init zle-keymap-select {
+   VIM_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]%  %{$reset_color%}"
+   RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/} $EPS1"
+   zle reset-prompt
+}
+
+zle -N zle-line-init
+zle -N zle-keymap-select
+
+export KEYTIMEOUT=1
+
+alias docker-nuke-all='docker stop $(docker container ls -a -q) && docker system prune -a -f --volumes'
+
+# Rust
+export PATH="$HOME/.cargo/bin:$PATH"
