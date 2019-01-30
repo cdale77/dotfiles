@@ -57,6 +57,9 @@ autocmd FileType exs set list listchars=tab:»·,trail:·,nbsp:·
 autocmd FileType java set nolist tabstop=4 shiftwidth=4 listchars=trail:·,nbsp:·
 au BufEnter,BufNew *.es6 set syntax=javascript
 au BufEnter,BufNew *.hbs set syntax=html
+au BufEnter,BufNew *.fixtures set syntax=sql
+au BufEnter,BufNew *.seeds set syntax=sql
+au BufEnter,BufNew *.pg set syntax=sql
 
 " Make it obvious where 80 characters is
 set textwidth=80

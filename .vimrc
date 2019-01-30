@@ -1,4 +1,7 @@
 set nocompatible              " be iMproved, required
+set ttyfast
+set lazyredraw
+
 filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
@@ -11,18 +14,16 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'jpo/vim-railscasts-theme'
 Plugin 'airblade/vim-gitgutter'
 "Plugin 'fatih/vim-go'
-"Plugin 'kchmck/vim-coffee-script'
 Plugin 'Valloric/YouCompleteMe'
 "Plugin 'scrooloose/syntastic'
 Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx' " Breaks syntax highlighting for js
-"Plugin 'marijnh/tern_for_vim'
+"Plugin 'mxw/vim-jsx' " Breaks syntax highlighting for js
 Plugin 'tpope/vim-endwise'
 "Plugin 'scrooloose/nerdtree'
 "Plugin 'nathanaelkane/vim-indent-guides'
 "Plugin 'tpope/vim-surround'
 Plugin 'jiangmiao/auto-pairs'
-Plugin 'elixir-lang/vim-elixir'
+"Plugin 'elixir-lang/vim-elixir'
 "Plugin 'tpope/vim-repeat'
 "Plugin 'ternjs/tern_for_vim'
 
@@ -43,6 +44,7 @@ set expandtab
 
 set list listchars=trail:·,nbsp:·
 autocmd FileType ruby set list listchars=tab:»·,trail:·,nbsp:·
+autocmd FileType python set list listchars=tab:»·,trail:·,nbsp:·
 autocmd FileType go setlocal tabstop=8
 autocmd FileType javascript set list listchars=tab:»·,trail:·,nbsp:·
 autocmd FileType html set list listchars=tab:»·,trail:·,nbsp:·
@@ -123,3 +125,21 @@ set guifont=DejaVu\ Sans\ Mono\ 9
 " YCM
 let g:ycm_min_num_of_chars_for_completion = 2
 let g:ycm_complete_in_strings = 0
+
+set guifont=DejaVu\ Sans\ Mono:h14
+
+" disable bell on macvim
+autocmd! GUIEnter * set vb t_vb=
+
+"let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+"let &t_SR = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=2\x7\<Esc>\\"
+"let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+"if exists('$TMUX')
+"  let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
+"  let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
+"else
+"  let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+"  let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+"endif
+set mouse=a
+
