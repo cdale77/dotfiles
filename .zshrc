@@ -1,3 +1,5 @@
+# autojump
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
 # homebrew
 export PATH=/usr/local/bin:$PATH
@@ -28,11 +30,17 @@ export TERM="screen-256color"
 
 
 ## Aliases
+alias cp="cp -iv"
+alias rm="rm -iv"
+alias mv="mv -iv"
+alias ls="ls -alhF"
+alias sed="sed -E"
 alias gs="git status"
 alias gl="git log"
 alias gb="git branch"
 alias ga="git add -A"
 alias gc="git commit"
+alias gck="git checkout"
 #alias vim="mvim"
 alias vi="nvim"
 
