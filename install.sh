@@ -12,3 +12,4 @@ ln -sfv $script_path/.tern-config ~/.tern-config
 ln -sfv $script_path/.tmux.conf ~/.tmux.conf
 ln -sfv $script_path/.zshrc ~/.zshrc
 ln -sfv $script_path/init.vim ~/.config/nvim/
+ln -sfv $script_path/.psqlrc ~/.psqlrc
